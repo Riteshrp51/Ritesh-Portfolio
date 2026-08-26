@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ─── Design Tokens ─── */
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --color-bg: #0B0B14;
+  --color-card: #161622;
+  --color-card-hover: #1E1E2E;
+  --color-accent: #8B5CF6;
+  --color-accent-hover: #A78BFA;
+  --color-accent-glow: #8B5CF620;
+  --color-text: #F5F5F7;
+  --color-text-secondary: #A1A1AA;
+  --color-border: #2A2A3C;
+  --color-border-hover: #3A3A4C;
+}
+
+/* ─── Base ─── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #0B0B14;
+    color: #F5F5F7;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: #8B5CF640;
+    color: #F5F5F7;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0B14;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2A2A3C;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8B5CF6;
+  }
+}
+
+/* ─── Component Classes ─── */
+@layer components {
+  .glass-card {
+    background: #161622;
+    border: 1px solid #2A2A3C;
+    border-radius: 1rem;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .glass-card:hover {
+    border-color: #3A3A4C;
+    box-shadow: 0 8px 40px rgba(139, 92, 246, 0.08);
+  }
+
+  .glass-nav {
+    background: rgba(11, 11, 20, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid #2A2A3C;
+  }
+
+  .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 1.75rem;
+    border-radius: 9999px;
+    background: #8B5CF6;
+    color: #F5F5F7;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  .btn-primary:hover {
+    background: #A78BFA;
+    box-shadow: 0 6px 25px rgba(139, 92, 246, 0.4);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.625rem 1.75rem;
+    border-radius: 9999px;
+    border: 2px solid #2A2A3C;
+    color: #F5F5F7;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    background: transparent;
+  }
+  .btn-outline:hover {
+    border-color: #8B5CF6;
+    color: #A78BFA;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.15);
+    transform: translateY(-2px);
+  }
+
+  /* Section heading accent bar */
+  .section-heading {
+    position: relative;
+    display: inline-block;
+  }
+  .section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #8B5CF6, #A78BFA);
+    border-radius: 2px;
+  }
+}
+
+/* ─── Utility Animations ─── */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(139, 92, 246, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(139, 92, 246, 0.6); }
+}
+
+@keyframes count-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes border-trace {
+  0% { clip-path: inset(0 100% 100% 0); }
+  25% { clip-path: inset(0 0 100% 0); }
+  50% { clip-path: inset(0 0 0 0); }
+  75% { clip-path: inset(0 0 0 0); }
+  100% { clip-path: inset(0 0 0 0); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite;
+}
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* ─── Progress bar fill animation ─── */
+.progress-bar-fill {
+  transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ─── Form field animated underline ─── */
+.field-underline {
+  position: relative;
+}
+.field-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #8B5CF6;
+  transition: width 0.4s ease;
+}
+.field-underline:focus-within::after {
+  width: 100%;
+}
