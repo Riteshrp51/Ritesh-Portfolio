@@ -6,8 +6,8 @@ const skillCategories = [
     title: 'Programming Languages',
     icon: '💻',
     skills: [
-      { name: 'JavaScript', level: 90 },
-      { name: 'C++', level: 85 },
+      { name: 'Java', level: 90 },
+      { name: 'Javascript', level: 80 },
       { name: 'Java', level: 80 },
       { name: 'Python', level: 75 },
     ],
@@ -27,9 +27,9 @@ const skillCategories = [
     title: 'Databases',
     icon: '🗄️',
     skills: [
-      { name: 'MySQL', level: 85 },
-      { name: 'MongoDB', level: 80 },
-      { name: 'PostgreSQL', level: 70 },
+      { name: 'MySQL', level: 90 },
+      { name: 'MongoDB', level: 85 },
+      { name: 'PostgreSQL', level: 75 },
     ],
   },
   {
@@ -47,9 +47,9 @@ const skillCategories = [
     title: 'Tools & Testing',
     icon: '🛠️',
     skills: [
-      { name: 'Git', level: 85 },
+      { name: 'Git', level: 90 },
+      { name: 'Vercel', level: 85 },
       { name: 'Postman', level: 80 },
-      { name: 'Vercel', level: 80 },
       { name: 'Jest', level: 70 },
       { name: 'Render', level: 75 },
     ],

@@ -53,6 +53,15 @@ const socialLinks = [
       </svg>
     ),
   },
+  {
+    label: 'LeetCode',
+    href: 'https://leetcode.com/u/Riteshpatilrp_51/',
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" d="M9 7l-4 5 4 5M15 7l4 5-4 5M14 4l-4 16" />
+      </svg>
+    ),
+  },
 ];
 
 export default function Contact() {

@@ -23,7 +23,7 @@ const education = [
     mode: 'Full-time',
     grade: 'MHT-CET: 91.89% | HSC: 78%',
     highlights: [
-      'Science stream with strong performance in mathematics and physics.',
+      'Science stream with strong performance in mathematics and chemistry.',
       'MHT-CET score in the 91st percentile, demonstrating strong analytical and problem-solving skills.',
       'Built foundational knowledge in programming and logical reasoning.',
     ],
