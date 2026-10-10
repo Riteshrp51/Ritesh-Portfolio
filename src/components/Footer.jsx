@@ -31,7 +31,7 @@ export default function Footer() {
             </a>
             {/* LinkedIn */}
             <a
-              href="https://linkedin.com/in/riteshpatil"
+              href="https://www.linkedin.com/in/ritesh-patil-2941352b9"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full border border-[#2A2A3C] flex items-center justify-center text-[#A1A1AA] hover:text-[#8B5CF6] hover:border-[#8B5CF6] transition-all"
