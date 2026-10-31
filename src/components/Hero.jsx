@@ -118,9 +118,9 @@ export default function Hero() {
           <div className="absolute inset-0 rounded-full p-1 bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] shadow-2xl shadow-[#8B5CF6]/20">
             <div className="w-full h-full rounded-full overflow-hidden bg-[#161622] border-4 border-[#0B0B14]">
               <img
-                src="/ritesh.jpeg"
+                src="/ritesh.jpg"
                 alt="Ritesh Patil"
-                className="w-full h-full object-cover rotate-270"
+                className="w-full h-full object-cover rotate-360"
                 onError={(e) => {
                   e.target.onerror = null;
                   e.target.src = "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22200%22%20height%3D%22200%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23161622%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20font-size%3D%2248%22%20font-family%3D%22Inter%2Csans-serif%22%20font-weight%3D%22700%22%20text-anchor%3D%22middle%22%20dy%3D%22.3em%22%20fill%3D%22%238B5CF6%22%3ERP%3C%2Ftext%3E%3C%2Fsvg%3E";

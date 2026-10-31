@@ -87,7 +87,7 @@ export default function About() {
               and have a strong foundation in Data Structures &amp; Algorithms with 400+ problems solved on LeetCode. 
               My experience ranges from building AI-powered interview platforms and e-commerce applications to developing 
               real-time industrial dashboards at Zanwar Group of Industries. I thrive in collaborative environments, 
-              having placed in the Top 15 at WCE National Hackathon and Top 52 in Codeshetra. 
+              having placed in the Top 15 at WCE National Hackathon and Top 52 in Codeshetra.
               I'm driven by the desire to build impactful software that solves real-world problems.
             </p>
 
