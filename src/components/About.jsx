@@ -84,7 +84,7 @@ export default function About() {
             <p className="text-[#A1A1AA] leading-relaxed text-base mb-8">
               I'm Ritesh Patil, a third-year Computer Engineering student at D.Y. Patil College of Engineering and Technology, 
               Kolhapur, with a CGPA of 8.98. I specialize in full-stack web development using React, Next.js, Node.js, and Express.js, 
-              and have a strong foundation in Data Structures &amp; Algorithms with 200+ problems solved on LeetCode. 
+              and have a strong foundation in Data Structures &amp; Algorithms with 400+ problems solved on LeetCode. 
               My experience ranges from building AI-powered interview platforms and e-commerce applications to developing 
               real-time industrial dashboards at Zanwar Group of Industries. I thrive in collaborative environments, 
               having placed in the Top 15 at WCE National Hackathon and Top 52 in Codeshetra. 

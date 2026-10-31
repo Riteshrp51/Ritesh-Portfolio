@@ -31,7 +31,7 @@ const achievements = [
     icon: '🚀',
   },
   {
-    title: '200+ LeetCode Problems Solved',
+    title: '400+ LeetCode Problems Solved',
     category: 'Academic',
     year: '2024–Present',
     description: 'Consistently strengthened algorithmic thinking and problem-solving skills through 200+ problems across data structures and algorithms.',
