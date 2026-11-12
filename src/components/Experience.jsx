@@ -57,7 +57,7 @@ export default function Experience() {
                 </div>
                 <div className="mt-3 md:mt-0 text-left md:text-right">
                   <span className="inline-block px-3 py-1 bg-[#161622] border border-[#2A2A3C] text-[#A1A1AA] rounded-full text-sm font-medium">
-                    April 2025 – Present
+                    September 2025 – Present
                   </span>
                   <p className="text-[#A1A1AA] text-sm mt-1.5">Kolhapur, India</p>
                 </div>

@@ -36,6 +36,7 @@ const projects = [
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'JWT'],
     date: 'June 2026 – Oct 2026',
     type: 'Full-Stack Mentorship Platform',
+    demo: 'https://mentor-connect-wheat.vercel.app/',
     github: 'https://github.com/Riteshrp51/Mentor-connect',
     description: 'A full-stack mentorship platform bridging the gap between students and experienced mentors, featuring real-time 1-on-1 messaging, seamless session scheduling, and personalized guidance.',
     outcomes: [
@@ -90,14 +91,14 @@ export default function Projects() {
 
               {/* Header */}
               <div className="p-6 pb-4">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#A78BFA] bg-[#8B5CF6]/10 border border-[#8B5CF6]/20 px-2.5 py-1 rounded-full">
+                <div className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-3 mb-3">
+                  <span className="w-fit max-w-full text-[10px] font-bold uppercase tracking-wider leading-tight text-[#A78BFA] bg-[#8B5CF6]/10 border border-[#8B5CF6]/20 px-2 py-0.5 rounded-full">
                     {project.type}
                   </span>
-                  <span className="text-xs text-[#A1A1AA] font-medium">{project.date}</span>
+                  <span className="whitespace-nowrap text-right text-xs text-[#A1A1AA] font-medium">{project.date}</span>
                 </div>
 
-                <h3 className="text-xl font-bold text-[#F5F5F7] mb-2 group-hover:text-[#A78BFA] transition-colors duration-300">
+                <h3 className="text-xl font-bold text-[#F5F5F7] mb-2">
                   {project.title}
                 </h3>
                 <p className="text-sm text-[#A1A1AA] leading-relaxed mb-4">
